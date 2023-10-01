@@ -297,8 +297,7 @@ function toggleSearch(elem) {
   elem.style.backgroundColor = <?php echo js_escape($searchcolor); ?>;
  else
   elem.style.backgroundColor = '';
-
- if (!elem.classList.contains("is-invalid") && $.trim($(elem).val()) == '') {
+ 
   elem.classList.add("is-invalid");
 } else {
   if($.trim($(elem).val()) != '') {
@@ -384,6 +383,7 @@ function srchDone(pid){
 <?php
 /*Get the constraint from the DB-> LBF forms accordinf the form_id*/
 $constraints = LBF_Validation::generate_validate_constraints("DEM");
+//Amadou: The below is the script that will be used to create the "Search or Add Patient" form
 ?>
 <script> var constraints = <?php echo $constraints; ?>; </script>
     <div class="container-xl">

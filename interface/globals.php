@@ -84,7 +84,7 @@ if (preg_match("/^[^\/]/", $web_root)) {
 //  real time per above code. If above is not working, can uncomment and
 //  set manually here:
 //   $webserver_root = "/var/www/openemr";
-//   $web_root =  "/openemr";
+$web_root =  "/openemr";
 
 $ResolveServerHost = static function () {
     $scheme = ($_SERVER['REQUEST_SCHEME'] ?? 'https') . "://";
@@ -133,7 +133,7 @@ $GLOBALS['OE_SITES_BASE'] = "$webserver_root/sites";
 * Unless $sessionAllowWrite is true, ensure no session writes are used within the calling
 *   scope of this globals instance. Goal is to unlock session file as quickly as possible
 *   instead of waiting for calling script to complete before releasing flock.
- */
+*/
 $read_only = empty($sessionAllowWrite);
 if (session_status() === PHP_SESSION_NONE) {
     //error_log("1. LOCK ".GetCallingScriptName()); // debug start lock

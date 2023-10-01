@@ -15,7 +15,7 @@
  * @license   https://github.com/openemr/openemr/blob/master/LICENSE GNU General Public License 3
  */
 
-//  Current supported languages:    // Allow capture of term for translation:
+//   Current supported languages:   // Allow capture of term for translation:
 //   Albanian                       // xl('Albanian')
 //   Amharic                        // xl('Amharic')
 //   Arabic                         // xl('Arabic')
@@ -562,7 +562,7 @@ $GLOBALS_METADATA = array(
         'login_tagline_text' => [
             xl('Login Page Tagline') . "*",
             'text',
-            xl("The most popular open-source Electronic Health Record and Medical Practice Management solution."),
+            xl("Our motto, 'Connecting Care, Empowering Lives,' signifies our commitment to healthcare accessibility, ensuring everyone has a health record and a unique health card for a healthier life."),
             xl("Tagline text on the login page")
         ],
 
